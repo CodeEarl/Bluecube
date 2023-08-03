@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="extra.css">
+        <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+        <meta name="keywords" content="Bluecube website javascript sidebar" />
+        <meta name="description" content="A functional website" />
+        <meta name="author" content="Code Earl" />
+        <title>Bluecube</title>
+    </head>
+    <body>
+        <section class="main">
+            <div class="sidebar-container">
+                
+                <button class="sidebar-toggle" type="menu">
+                    <span class="bars"></span>
+                </button>
+    
+                <aside class="sidebar">
+                    <div class="sidebar-header">
+                        <img src="/logo.png" alt="" class="logo">
+                    </div>
+    
+                    <div class="links">
+                        <div class="link">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 -960 960 960"><path d="M200-160v-320H80l400-360 200 177v-117h80v191l120 108.574H760V-160H530v-240H430v240H200Zm60-60h110v-240h220v240h110v-341L480-761 260-561v341Zm110-240h220-220Zm25-110h170q0-33-25.5-54.5T480-646q-34 0-59.5 21.342Q395-603.315 395-570Z"/></svg>
+                            <a href="#">home</a>
+                        </div>
+                        <div class="link">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M319-250h322v-60H319v60Zm0-170h322v-60H319v60ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm331-554v-186H220v680h520v-494H551ZM220-820v186-186 680-680Z"/></svg>   
+                            <a href="#">message</a>
+                        </div>
+                        <p class="share">share</p>
+                        <div class="link">
+                            <a href="#">ranking</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M353.8 54.1L330.2 6.3c-3.9-8.3-16.1-8.6-20.4 0L286.2 54.1l-52.3 7.5c-9.3 1.4-13.3 12.9-6.4 19.8l38 37-9 52.1c-1.4 9.3 8.2 16.5 16.8 12.2l46.9-24.8 46.6 24.4c8.6 4.3 18.3-2.9 16.8-12.2l-9-52.1 38-36.6c6.8-6.8 2.9-18.3-6.4-19.8l-52.3-7.5zM256 256c-17.7 0-32 14.3-32 32V480c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V288c0-17.7-14.3-32-32-32H256zM32 320c-17.7 0-32 14.3-32 32V480c0 17.7 14.3 32 32 32H160c17.7 0 32-14.3 32-32V352c0-17.7-14.3-32-32-32H32zm416 96v64c0 17.7 14.3 32 32 32H608c17.7 0 32-14.3 32-32V416c0-17.7-14.3-32-32-32H480c-17.7 0-32 14.3-32 32z"/></svg>
+                        </div>
+                        <div class="link">
+                            <a href="#">challenge</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-394Zm-153-51 75 50 78-39 77 40 75-50-47-96H374l-47 95ZM177-140h606L659-390l-97 65-82-41-82 40-98-65-123 251ZM80-80l240-487q8-15 22.468-24 14.467-9 31.532-9h76v-280h254l-35 70 35 70H510v140h73q16.931 0 30.917 9T636-567L880-80H80Z"/></svg>
+                        </div>
+                        <div class="link">
+                            <a href="#">party</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M80-160v-60h240q-20-91-87.5-159.5T80-470q20-5 39.5-7.5T160-480q134 0 227 93t93 227H80Zm460 0q0-42-8-73.5T512-296q40-88 120-136t168-48q21 0 40.5 2.5T880-470q-85 22-154 91.5T640-220h240v60H540Zm-58-193q-9-76 13-142t64.5-115Q602-659 662-688t127-31q-56 35-105.5 95.5T621-494q-44 21-80 58.5T482-353Zm-61-76q-16-15-35-30t-32-23q3-12 4.5-26.5T360-532q0-76-24-144t-68-124q70 28 124 88.5T468-573q-18 32-30.5 69.5T421-429Z"/></svg>
+                        </div>
+                        <div class="link">
+                            <a href="#">connect</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M450-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h170v60H280q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q140-422 180.833-381q40.834 41 99.167 41h170v60ZM325-450v-60h310v60H325Zm185 170v-60h170q58.333 0 99.167-40.765 40.833-40.764 40.833-99Q820-538 779.167-579 738.333-620 680-620H510v-60h170q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H510Z"/></svg>
+                        </div>
+                        <div class="link">
+                            <a href="#">parade</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M167-80v-223h104v223H167Zm212 0v-515q-54 24-81 67t-27 112h-60q0-122 73-189t198-67q109 0 167-40.5T707-856h60q0 95-43.5 153.5T590-623v543h-60v-255h-91v255h-60Zm103.08-654q-30.08 0-51.58-21.42-21.5-21.421-21.5-51.5 0-30.08 21.42-51.58 21.421-21.5 51.5-21.5 30.08 0 51.58 21.42 21.5 21.421 21.5 51.5 0 30.08-21.42 51.58-21.421 21.5-51.5 21.5Z"/></svg>
+                        </div>
+                        <div class="link">
+                            <a href="#">groups</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M0-240v-53q0-38.567 41.5-62.784Q83-380 150.376-380q12.165 0 23.395.5Q185-379 196-377.348q-8 17.348-12 35.165T180-305v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-19.861-3.5-37.431Q773-360 765-377.273q11-1.727 22.171-2.227 11.172-.5 22.829-.5 67.5 0 108.75 23.768T960-293v53H780Zm-480-60h360v-6q0-37-50.5-60.5T480-390q-79 0-129.5 23.5T300-305v5ZM149.567-410Q121-410 100.5-430.562 80-451.125 80-480q0-29 20.562-49.5Q121.125-550 150-550q29 0 49.5 20.5t20.5 49.933Q220-451 199.5-430.5T149.567-410Zm660 0Q781-410 760.5-430.562 740-451.125 740-480q0-29 20.562-49.5Q781.125-550 810-550q29 0 49.5 20.5t20.5 49.933Q880-451 859.5-430.5T809.567-410ZM480-480q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm.351-60Q506-540 523-557.351t17-43Q540-626 522.851-643t-42.5-17Q455-660 437.5-642.851t-17.5 42.5Q420-575 437.351-557.5t43 17.5ZM480-300Zm0-300Z"/></svg>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <main>
+                <section class="top-bar">
+                    <form class="input" id="form">
+                        <input type="search" name="search" id="search" placeholder="Find Something...">
+                        <button type="submit" class="search-btn">search</button>
+                    </form>
+    
+                    <div class="notifications">
+                        <svg class="icon bell" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M160-200v-60h80v-304q0-84 49.5-150.5T420-798v-22q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v22q81 17 130.5 83.5T720-564v304h80v60H160Zm320-302Zm0 422q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM300-260h360v-304q0-75-52.5-127.5T480-744q-75 0-127.5 52.5T300-564v304Z"/></svg>
+                        <span id="number"></span>
+    
+                        <div class="messages">
+                            <div class="container" id="one">
+                                <img src="/Images/avatar-anna-kim.webp" alt="">
+                
+                                <div class="text">
+                                    <h4>Michael liked you!</h4>
+                                    <p>about 20 minutes ago</p>
+                                </div>
+                                <svg class="unread" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                            </div>
+                        
+                            <div class="container">
+                                <img src="/Images/avatar-jacob-thompson.webp" alt="">
+                    
+                                <div class="text">
+                                    <h4>Jack liked you!</h4>
+                                    <p>about 40 minutes ago</p>
+                                </div>
+                                <svg class="unread" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                            </div>
+                    
+                            <div class="container">
+                                <img src="/Images/avatar-mark-webber.webp" alt="">
+                    
+                                <div class="text">
+                                    <h4>Martin commented on your photo</h4>
+                                    <p>1 day ago</p>
+                                </div>
+                                <svg class="unread comment" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M80-80v-740q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H240L80-80Zm134-220h606v-520H140v600l74-80Zm-74 0v-520 520Z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="account" onclick="alert()">
+                        <div class="profile">
+                            <img src="/Images/avatar-kimberly-smith.webp" alt="">
+                        </div>
+                        <p href="#">abigail &ShortDownArrow;</p>
+                    </div>
+                </section>
+    
+                
+    
+                <nav class="links-container">
+                        <div class="slide">
+                            <a href="#">world</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                            <div class="dropdown-content">
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="#">following</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                            <div class="dropdown-content">
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="#">popular</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                            <div class="dropdown-content">
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="#">post</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                            <div class="dropdown-content">
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="#">gender</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                            <div class="dropdown-content">
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="#">location</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                            <div class="dropdown-content">
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="#">profession</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                            <div class="dropdown-content">
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="#">age</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                            <div class="dropdown-content">
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                                <a href="#">Hello World</a>
+                            </div>
+                        </div>
+
+                </nav>
+    
+                <section class="main-content">
+        
+                    <div class="slideshow-container" id="slideshow1">
+                        <div class="mySlides fade">
+                            <img src="/Images/pexels-rico-chrystofel-2701161.jpg" alt="slide 1 img 1">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/Images/pexels-irfan-ibrahim-2741363.jpg" alt="slide 1 img 2">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/Images/pexels-nothing-ahead-3053472.jpg" alt="slide 1 img 3">
+                        </div>
+                        <div class="description">
+                            <h4>Brenda, 28</h2>
+                            <h6><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20px" fill="grey" viewBox="0 -960 960 960" width="48"><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                                new york
+                            </h3>
+                            <div class="icons">
+                                <div class="fave">
+                                    <svg class="like" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                </div>
+                                <div class="hate">
+                                    <svg class="dislike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" width="24px" height="24px"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-18.5-10.5-34.6-25.9-42.6C497 236.6 504 223.1 504 208c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 384H96c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H32C14.3 96 0 110.3 0 128V352c0 17.7 14.3 32 32 32z"/></svg>
+                                 </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slideshow-container" id="slideshow2">
+                        <div class="mySlides two fade">
+                            <img src="/Images/pexels-nothing-ahead-3053472.jpg"   alt="slide 2 img 1">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/pexels-irfan-ibrahim-2741363.jpg"   alt="slide 2 img 2">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/pexels-rico-chrystofel-2701161.jpg"   alt="slide 2 img 3">
+                        </div>
+                        <div class="description">
+                            <h4>Serena, 25</h2>
+                            <h6><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20px" fill="grey" viewBox="0 -960 960 960" width="48"><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                                canada
+                            </h3>
+                            <div class="icons">
+                                <div class="fave">
+                                    <svg class="like" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                </div>
+                                <div class="hate">
+                                    <svg class="dislike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" width="24px" height="24px"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-18.5-10.5-34.6-25.9-42.6C497 236.6 504 223.1 504 208c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 384H96c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H32C14.3 96 0 110.3 0 128V352c0 17.7 14.3 32 32 32z"/></svg>
+                                 </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slideshow-container" id="slideshow3">
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/anton-mislawsky-c-3hSCXRZKo-unsplash.jpg"   alt="slide 2 img 1">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/black-linear-studios-zHx8-P99Xws-unsplash.jpg"   alt="slide 2 img 2">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/brandon-erlinger-ford-2wSe9hhfpnM-unsplash.jpg"   alt="slide 2 img 3">
+                        </div>
+                        <div class="description">
+                            <h4>Louise, 18</h2>
+                            <h6><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20px" fill="grey" viewBox="0 -960 960 960" width="48"><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                                nairobi, kenya
+                            </h3>
+                            <div class="icons">
+                                <div class="fave">
+                                    <svg class="like" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                </div>
+                                <div class="hate">
+                                    <svg class="dislike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" width="24px" height="24px"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-18.5-10.5-34.6-25.9-42.6C497 236.6 504 223.1 504 208c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 384H96c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H32C14.3 96 0 110.3 0 128V352c0 17.7 14.3 32 32 32z"/></svg>
+                                 </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slideshow-container" id="slideshow4">
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/anton-mislawsky-c-3hSCXRZKo-unsplash.jpg"   alt="slide 2 img 1">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/black-linear-studios-zHx8-P99Xws-unsplash.jpg"   alt="slide 2 img 2">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/brandon-erlinger-ford-2wSe9hhfpnM-unsplash.jpg"   alt="slide 2 img 3">
+                        </div>
+                        <div class="description">
+                            <h4>Diana Wells, 31</h2>
+                            <h6><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20px" fill="grey" viewBox="0 -960 960 960" width="48"><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                                los angeles
+                            </h3>
+                            <div class="icons">
+                                <div class="fave">
+                                    <svg class="like" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                </div>
+                                <div class="hate">
+                                    <svg class="dislike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" width="24px" height="24px"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-18.5-10.5-34.6-25.9-42.6C497 236.6 504 223.1 504 208c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 384H96c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H32C14.3 96 0 110.3 0 128V352c0 17.7 14.3 32 32 32z"/></svg>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container" id="slideshow5">
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/anton-mislawsky-c-3hSCXRZKo-unsplash.jpg"   alt="slide 2 img 1">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/black-linear-studios-zHx8-P99Xws-unsplash.jpg"   alt="slide 2 img 2">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/brandon-erlinger-ford-2wSe9hhfpnM-unsplash.jpg"   alt="slide 2 img 3">
+                        </div>
+                        <div class="description">
+                            <h4>william, 28</h2>
+                            <h6><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20px" fill="grey" viewBox="0 -960 960 960" width="48"><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                                new york
+                            </h3>
+                            <div class="icons">
+                                <div class="fave">
+                                    <svg class="like" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                </div>
+                                <div class="hate">
+                                    <svg class="dislike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" width="24px" height="24px"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-18.5-10.5-34.6-25.9-42.6C497 236.6 504 223.1 504 208c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 384H96c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H32C14.3 96 0 110.3 0 128V352c0 17.7 14.3 32 32 32z"/></svg>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container" id="slideshow6">
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/anton-mislawsky-c-3hSCXRZKo-unsplash.jpg"   alt="slide 2 img 1">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/black-linear-studios-zHx8-P99Xws-unsplash.jpg"   alt="slide 2 img 2">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/brandon-erlinger-ford-2wSe9hhfpnM-unsplash.jpg"   alt="slide 2 img 3">
+                        </div>
+                        <div class="description">
+                            <h4>Brenda, 28</h2>
+                            <h6><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20px" fill="grey" viewBox="0 -960 960 960" width="48"><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                                new york
+                            </h3>
+                            <div class="icons">
+                                <div class="fave">
+                                    <svg class="like" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                </div>
+                                <div class="hate">
+                                    <svg class="dislike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" width="24px" height="24px"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-18.5-10.5-34.6-25.9-42.6C497 236.6 504 223.1 504 208c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 384H96c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H32C14.3 96 0 110.3 0 128V352c0 17.7 14.3 32 32 32z"/></svg>
+                                 </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container" id="slideshow7">
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/anton-mislawsky-c-3hSCXRZKo-unsplash.jpg"   alt="slide 2 img 1">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/black-linear-studios-zHx8-P99Xws-unsplash.jpg"   alt="slide 2 img 2">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/brandon-erlinger-ford-2wSe9hhfpnM-unsplash.jpg"   alt="slide 2 img 3">
+                        </div>
+                        <div class="description">
+                            <h4>harvey, 35</h2>
+                            <h6><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20px" fill="grey" viewBox="0 -960 960 960" width="48"><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                            </h3>
+                            <div class="icons">
+                                <div class="fave">
+                                    <svg class="like" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                </div>
+                                <div class="hate">
+                                    <svg class="dislike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" width="24px" height="24px"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-18.5-10.5-34.6-25.9-42.6C497 236.6 504 223.1 504 208c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 384H96c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H32C14.3 96 0 110.3 0 128V352c0 17.7 14.3 32 32 32z"/></svg>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container" id="slideshow8">
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/anton-mislawsky-c-3hSCXRZKo-unsplash.jpg"   alt="slide 2 img 1">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/black-linear-studios-zHx8-P99Xws-unsplash.jpg"   alt="slide 2 img 2">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/brandon-erlinger-ford-2wSe9hhfpnM-unsplash.jpg"   alt="slide 2 img 3">
+                        </div>
+                        <div class="description">
+                            <h4>adam, 23</h2>
+                            <h6><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20px" fill="grey" viewBox="0 -960 960 960" width="48"><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                                lagos
+                            </h3>
+                            <div class="icons">
+                                <div class="fave">
+                                    <svg class="like" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                </div>
+                                <div class="hate">
+                                    <svg class="dislike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" width="24px" height="24px"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-18.5-10.5-34.6-25.9-42.6C497 236.6 504 223.1 504 208c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 384H96c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H32C14.3 96 0 110.3 0 128V352c0 17.7 14.3 32 32 32z"/></svg>
+                                 </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container" id="slideshow9">
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/black-linear-studios-zHx8-P99Xws-unsplash.jpg"   alt="slide 2 img 1">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/anton-mislawsky-c-3hSCXRZKo-unsplash.jpg"   alt="slide 2 img 2">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/brandon-erlinger-ford-2wSe9hhfpnM-unsplash.jpg"   alt="slide 2 img 3">
+                        </div>
+                        <div class="description">
+                            <h4>Brenda, 28</h2>
+                            <h6><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20px" fill="grey" viewBox="0 -960 960 960" width="48"><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                                new york
+                            </h3>
+                            <div class="icons">
+                                <div class="fave">
+                                    <svg class="like" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                </div>
+                                <div class="hate">
+                                    <svg class="dislike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" width="24px" height="24px"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-18.5-10.5-34.6-25.9-42.6C497 236.6 504 223.1 504 208c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 384H96c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H32C14.3 96 0 110.3 0 128V352c0 17.7 14.3 32 32 32z"/></svg>
+                                 </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container" id="slideshow10">
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/anton-mislawsky-c-3hSCXRZKo-unsplash.jpg"   alt="slide 2 img 1">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/black-linear-studios-zHx8-P99Xws-unsplash.jpg"   alt="slide 2 img 2">
+                        </div>
+                        <div class="mySlides two fade">
+                            <img src="/Images/Photo Shoot/brandon-erlinger-ford-2wSe9hhfpnM-unsplash.jpg"   alt="slide 2 img 3">
+                        </div>
+                        <div class="description">
+                            <h4>Brenda, 28</h2>
+                            <h6><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20px" fill="grey" viewBox="0 -960 960 960" width="48"><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                                new york
+                            </h3>
+                            <div class="icons">
+                                <div class="fave">
+                                    <svg class="like" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                </div>
+                                <div class="hate">
+                                    <svg class="dislike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white" width="24px" height="24px"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-18.5-10.5-34.6-25.9-42.6C497 236.6 504 223.1 504 208c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 384H96c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H32C14.3 96 0 110.3 0 128V352c0 17.7 14.3 32 32 32z"/></svg>
+                                 </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </section>
+       
+    </body>
+    <script src="script.js"></script>
+</html>
